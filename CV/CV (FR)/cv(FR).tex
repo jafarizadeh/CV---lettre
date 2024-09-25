@@ -1,4 +1,4 @@
-\documentclass{letter}
+\documentclass[a4paper]{letter}
 \usepackage{wallpaper}
 \usepackage{geometry}
 \usepackage{xcolor}
@@ -6,19 +6,16 @@
 \usepackage[scaled]{helvet}
 \usepackage{fontawesome5}
 \usepackage[hidelinks]{hyperref}
-\usepackage[none]{hyphenat}
+\usepackage[french]{babel}
 \usepackage{graphicx}
 \usepackage{tikz}
-\usepackage[french]{babel}
-
-
+\usepackage{setspace}
 \usetikzlibrary{calc}
 
 \renewcommand{\familydefault}{\sfdefault}
 
 \geometry{
-  paperwidth=\dimexpr\textwidth+\marginparsep+\marginparwidth\relax,
-  paperheight=\dimexpr\textheight+\footskip\relax,
+  a4paper,
   left=20pt,
   right=20pt,
   top=0pt,
@@ -28,8 +25,13 @@
   nomarginpar
 }
 
-\ThisCenterWallPaper{1.5}{cvbg.png}
-
+\ThisCenterWallPaper{1.1}{cvbg.png}
+\newcommand{\skillsbar}[2]{%
+  \begin{tikzpicture}
+    \fill[gray!30] (0,0) rectangle (3,0.3);
+    \fill[cyan] (0,0) rectangle (#2*3/100,0.3);
+  \end{tikzpicture} \small #1
+}
 % Custom command for dividers
 \newcommand{\divider}{\rule{\linewidth}{0.9pt}}
 
@@ -39,9 +41,10 @@
 
 
 \begin{document}
-\small
+%\small
 \begin{minipage}[t]{0.40\textwidth}
-\setlength{\baselineskip}{1.5\baselineskip}
+\setstretch{1.4} 
+\setlength{\baselineskip}{1.2\baselineskip}
 \color{white}
 \vspace{5mm}
 
@@ -69,6 +72,17 @@
 
 \divider
 
+% ================ Langage de Programmation ================
+%\vspace{2mm}
+{\large \textbf{Langues}}
+
+\skillsbar{Persan (langue maternelle)}{100}
+
+\skillsbar{Français}{75}
+
+\skillsbar{Anglais}{50}
+
+\divider
 % ================ Langage de Programmation ================
 
 {\large \textbf{Langage de Programmation}}
@@ -126,11 +140,12 @@
 {\large \textbf{Éducation}}
 \divider
 
-{ \textbf{Comptabilité (Bac+2)}}
 
-{\footnotesize Septembre 2007-Décembre 2010}
+{\textbf{Informatique}}
+
+{\footnotesize Septembre 2021-Présent}
 \begin{itemize}
-    \footnotesize \item \textit{Université Azad de Kerman, Kerman}
+    \footnotesize \item \textit{Université de Strasbourg, Strasbourg}
 \end{itemize}
 
 \vspace{3mm}
@@ -144,12 +159,14 @@
 
 \vspace{3mm}
 
-{\textbf{Informatique}}
+{ \textbf{Comptabilité (Bac+2)}}
 
-{\footnotesize Septembre 2021-Present}
+{\footnotesize Septembre 2007-Décembre 2010}
 \begin{itemize}
-    \footnotesize \item \textit{Université de Strasbourg, Strasbourg}
+    \footnotesize \item \textit{Université Azad de Kerman, Kerman}
 \end{itemize}
+
+
 
 \vspace{0.8cm}
 
@@ -181,6 +198,20 @@
 % ================ Contributions Académiques ==================
 
 {\large \textbf{Contributions Académiques}}
+\divider
+\vspace{4mm}
+\begin{itemize}
+    \footnotesize \item {\textbf{Co-auteur}, \textit{Guide d’audit énergétique pour les étudiants de l’Université de Quchan, avec Dr. Majid Mahdavian, Publié en 2019}}
+
+
+\end{itemize}
+
+\vspace{3mm}
+
+
+% ================ Projet ==================
+
+{\large \textbf{Projets}}
 \divider
 \vspace{4mm}
 \begin{itemize}
