@@ -293,6 +293,7 @@ INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8t.tfm
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8t.tfm
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
 INPUT .\Documentation_FR.png
 INPUT .\Documentation_FR.png
@@ -301,6 +302,7 @@ INPUT .\Documentation_FR.png
 INPUT .\Documentation_FR.png
 INPUT .\Documentation_FR.png
 INPUT .\Documentation_FR.png
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT .\cvbg.png
 INPUT .\cvbg.png
@@ -329,8 +331,12 @@ INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8t
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT cv(FR).aux
