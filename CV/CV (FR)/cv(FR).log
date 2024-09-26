@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  26 SEP 2024 14:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  26 SEP 2024 14:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -572,44 +572,44 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 9.49997pt on input line 150.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 185.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 186.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 7.59998pt on input line 185.
+(Font)              scaled to size 7.59998pt on input line 186.
 
-Overfull \hbox (149.81274pt too wide) in paragraph at lines 219--221
+Overfull \hbox (149.81274pt too wide) in paragraph at lines 220--222
 []\T1/phv/b/n/12 Expérience Pro-fes-sion-nelle [] 
  []
 
 
-Overfull \hbox (153.05075pt too wide) in paragraph at lines 250--253
+Overfull \hbox (153.05075pt too wide) in paragraph at lines 251--254
 []\T1/phv/b/n/12 Contributions Aca-dé-miques [] 
  []
 
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.59998pt on input line 254.
+(Font)              scaled to size 7.59998pt on input line 255.
 
-Overfull \hbox (40.43137pt too wide) in paragraph at lines 264--267
+Overfull \hbox (40.43137pt too wide) in paragraph at lines 265--268
 []\T1/phv/b/n/12 Projets [] 
  []
 
 
-Overfull \hbox (2.01398pt too wide) in paragraph at lines 45--307
+Overfull \hbox (2.01398pt too wide) in paragraph at lines 45--308
 [][]  [] 
  []
 
 <Documentation_FR.png, id=9, 1003.75pt x 1003.75pt>
 File: Documentation_FR.png Graphic file (type png)
 <use Documentation_FR.png>
-Package pdftex.def Info: Documentation_FR.png  used on input line 312.
+Package pdftex.def Info: Documentation_FR.png  used on input line 313.
 (pdftex.def)             Requested size: 56.9055pt x 56.89883pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 317.
+(Font)              scaled to size 6.64998pt on input line 318.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 324.
+(Font)              scaled to size 4.74998pt on input line 325.
 <cvbg.png, id=12, 636.779pt x 901.769pt>
 File: cvbg.png Graphic file (type png)
 <use cvbg.png>
-Package pdftex.def Info: cvbg.png  used on input line 329.
+Package pdftex.def Info: cvbg.png  used on input line 330.
 (pdftex.def)             Requested size: 656.40468pt x 929.56172pt.
 
 Overfull \hbox (58.8968pt too wide) has occurred while \output is active
@@ -629,13 +629,13 @@ Package rerunfilecheck Info: File `cv(FR).out' has not changed.
 Here is how much of TeX's memory you used:
  25104 strings out of 474486
  487005 string characters out of 5744227
- 1953542 words of memory out of 5000000
+ 1954542 words of memory out of 5000000
  46993 multiletter control sequences out of 15000+600000
  593686 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,87p,455b,697s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on cv(FR).pdf (1 page, 2485395 bytes).
+Output written on cv(FR).pdf (1 page, 2485406 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
