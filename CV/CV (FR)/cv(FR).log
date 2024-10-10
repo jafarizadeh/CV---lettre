@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  29 SEP 2024 00:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  11 OCT 2024 00:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -448,33 +448,33 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 ) (C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 43.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 40.
  (C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 43.
+(Font)              scaled to size 9.49997pt on input line 40.
  (cv(FR).aux)
 \openout1 = `cv(FR).aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
  (C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count303
@@ -528,88 +528,86 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 43.
+Package hyperref Info: Link coloring OFF on input line 40.
 (cv(FR).out) (cv(FR).out)
 \@outlinefile=\write4
 \openout4 = `cv(FR).out'.
 
-LaTeX Info: Redefining \degres on input line 43.
-LaTeX Info: Redefining \up on input line 43.
+LaTeX Info: Redefining \degres on input line 40.
+LaTeX Info: Redefining \up on input line 40.
 <profile.jpg, id=6, 2324.685pt x 3099.58pt>
 File: profile.jpg Graphic file (type jpg)
 <use profile.jpg>
-Package pdftex.def Info: profile.jpg  used on input line 55.
+Package pdftex.def Info: profile.jpg  used on input line 54.
 (pdftex.def)             Requested size: 113.81102pt x 151.72467pt.
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on input line 64.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on input line 63.
  (C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomefree2.fd)
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 66.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 65.
  (C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomefree1.fd)
-LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on input line 68.
+LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on input line 67.
  (C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomebrands0.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not available
-(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 68.
+(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 77.
+(Font)              scaled to size 11.39996pt on input line 75.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 77.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 79.
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 90.
+(Font)              scaled to size 11.39996pt on input line 75.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 77.
  (C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomefree0.fd)
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 19.70294pt on input line 144.
+(Font)              scaled to size 19.70294pt on input line 143.
 
-Overfull \hbox (57.12094pt too wide) in paragraph at lines 150--152
+Overfull \hbox (57.12094pt too wide) in paragraph at lines 149--151
 []\T1/phv/b/n/12 Éducation [] 
  []
 
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 154.
+(Font)              scaled to size 9.49997pt on input line 153.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 156.
+(Font)              scaled to size 7.59998pt on input line 155.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 158.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 157.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 158.
+(Font)              scaled to size 9.49997pt on input line 157.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 193.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 187.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 7.59998pt on input line 193.
+(Font)              scaled to size 7.59998pt on input line 187.
 
-Overfull \hbox (149.81274pt too wide) in paragraph at lines 227--229
+Overfull \hbox (149.81274pt too wide) in paragraph at lines 214--216
 []\T1/phv/b/n/12 Expérience Pro-fes-sion-nelle [] 
  []
 
 
-Overfull \hbox (153.05075pt too wide) in paragraph at lines 258--261
-[]\T1/phv/b/n/12 Contributions Aca-dé-miques [] 
- []
-
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.59998pt on input line 262.
-
-Overfull \hbox (40.43137pt too wide) in paragraph at lines 272--275
+Overfull \hbox (40.43137pt too wide) in paragraph at lines 248--251
 []\T1/phv/b/n/12 Projets [] 
  []
 
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 7.59998pt on input line 252.
 
-Overfull \hbox (2.01398pt too wide) in paragraph at lines 45--315
+Overfull \hbox (153.05075pt too wide) in paragraph at lines 267--270
+[]\T1/phv/b/n/12 Contributions Aca-dé-miques [] 
+ []
+
+
+Overfull \hbox (2.01398pt too wide) in paragraph at lines 43--302
 [][]  [] 
  []
 
 <Documentation_FR.png, id=9, 1003.75pt x 1003.75pt>
 File: Documentation_FR.png Graphic file (type png)
 <use Documentation_FR.png>
-Package pdftex.def Info: Documentation_FR.png  used on input line 320.
+Package pdftex.def Info: Documentation_FR.png  used on input line 307.
 (pdftex.def)             Requested size: 56.9055pt x 56.89883pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 325.
+(Font)              scaled to size 6.64998pt on input line 312.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 332.
+(Font)              scaled to size 4.74998pt on input line 319.
 <cvbg.png, id=12, 636.779pt x 901.769pt>
 File: cvbg.png Graphic file (type png)
 <use cvbg.png>
-Package pdftex.def Info: cvbg.png  used on input line 337.
+Package pdftex.def Info: cvbg.png  used on input line 324.
 (pdftex.def)             Requested size: 656.40468pt x 929.56172pt.
 
 Overfull \hbox (58.8968pt too wide) has occurred while \output is active
@@ -627,15 +625,15 @@ Package rerunfilecheck Info: File `cv(FR).out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25104 strings out of 474486
- 487005 string characters out of 5744227
- 1954542 words of memory out of 5000000
- 46993 multiletter control sequences out of 15000+600000
- 593686 words of font info for 65 fonts, out of 8000000 for 9000
+ 25069 strings out of 474486
+ 486300 string characters out of 5744227
+ 1951542 words of memory out of 5000000
+ 46959 multiletter control sequences out of 15000+600000
+ 590485 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,87p,455b,697s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on cv(FR).pdf (1 page, 2511949 bytes).
+Output written on cv(FR).pdf (1 page, 2511682 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)

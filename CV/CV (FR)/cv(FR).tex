@@ -10,6 +10,8 @@
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{setspace}
+
+
 \usetikzlibrary{calc}
 
 \renewcommand{\familydefault}{\sfdefault}
@@ -26,12 +28,7 @@
 }
 
 \ThisCenterWallPaper{1.1}{cvbg.png}
-\newcommand{\skillsbar}[2]{%
-  \begin{tikzpicture}
-    \fill[gray!30] (0,0) rectangle (3,0.3);
-    \fill[cyan] (0,0) rectangle (#2*3/100,0.3);
-  \end{tikzpicture} \small #1
-}
+
 % Custom command for dividers
 \newcommand{\divider}{\rule{\linewidth}{0.9pt}}
 
@@ -41,12 +38,14 @@
 
 
 \begin{document}
+
 %\small
 \begin{minipage}[t]{0.40\textwidth}
-\setstretch{1.4} 
+\setstretch{1.2} 
 \setlength{\baselineskip}{1.2\baselineskip}
 \color{white}
 \vspace{5mm}
+
 
 % ========================== Photo ============================
 
@@ -72,17 +71,17 @@
 
 \divider
 
-% ================ Langage de Programmation ================
-%\vspace{2mm}
+% ================ Langues ================
 {\large \textbf{Langues}}
 
-\skillsbar{Persan (langue maternelle)}{100}
+\faCircleNotch \quad Persan (langue maternelle)
 
-\skillsbar{Français}{75}
+\faCircleNotch \quad Français (niveau avancé)
 
-\skillsbar{Anglais}{50}
+\faCircleNotch \quad Anglais (niveau intermédiaire)
 
 \divider
+
 % ================ Langage de Programmation ================
 
 {\large \textbf{Langage de Programmation}}
@@ -167,8 +166,9 @@
             \item CCNA (Cisco Certified Network Associate) - udemy (128h)
             \item ENARSI (Cisco Enterprise Advanced Routing and Services) - udemy (134h)
             \item IT network cabling: The complete fiber optics course - udemy (19h)
+            \item Wireshark for Beginners: Capture et l'analyse de paquets réseau pour le diagnostic et le dépannage - coursera (2h)
         \end{itemize}
-    \item Compétences acquises : Configuration de réseaux, Administration de systèmes
+    \item Compétences acquises : Routage et commutation, Configuration de réseaux, Analyse de trafic réseau.
 \end{itemize}
 
 \vspace{3mm}
@@ -184,12 +184,6 @@
 
 \begin{itemize}
     \footnotesize
-    \item Cours principaux :
-        \begin{itemize}
-            \item Thermodynamique avancée
-            \item Énergies renouvelables
-            \item Gestion de projets énergétiques
-        \end{itemize}
     \item Projet de fin d'études : \textit{Simulé la consommation énergétique des habitations}
     \item Compétences acquises : Modélisation énergétique, Optimisation de l'efficacité énergétique, Utilisation de logiciels spécialisés
 \end{itemize}
@@ -207,13 +201,6 @@
 
 
     \footnotesize
-    
-    \item Cours principaux :
-        \begin{itemize}
-            \item Comptabilité financière
-            \item Fiscalité
-            \item Audit interne
-        \end{itemize}
     \item Compétences acquises : Analyse financière, Conformité réglementaire
 \end{itemize}
 
@@ -251,18 +238,7 @@
 
 
 
-\vspace{3mm}
 
-% ================ Contributions Académiques ==================
-
-{\large \textbf{Contributions Académiques}}
-\divider
-\vspace{4mm}
-\begin{itemize}
-    \footnotesize \item {\textbf{Co-auteur}, \textit{Guide d’audit énergétique pour les étudiants de l’Université de Quchan, avec Dr. Majid Mahdavian, Publié en 2019}}
-
-
-\end{itemize}
 
 \vspace{3mm}
 
@@ -285,6 +261,17 @@
 \end{itemize}
 
 \vspace{3mm}
+
+% ================ Contributions Académiques ==================
+
+{\large \textbf{Contributions Académiques}}
+\divider
+\vspace{4mm}
+\begin{itemize}
+    \footnotesize \item {\textbf{Co-auteur}, \textit{Guide d’audit énergétique pour les étudiants de l’Université de Quchan, avec Dr. Majid Mahdavian, Publié en 2019}}
+
+
+\end{itemize}
 
 % ================ Formations Complémentaires ==================
 
