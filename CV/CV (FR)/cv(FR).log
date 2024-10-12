@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  11 OCT 2024 00:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  12 OCT 2024 12:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -555,59 +555,59 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 77.
  (C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomefree0.fd)
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 19.70294pt on input line 143.
+(Font)              scaled to size 19.70294pt on input line 155.
 
-Overfull \hbox (57.12094pt too wide) in paragraph at lines 149--151
+Overfull \hbox (57.12094pt too wide) in paragraph at lines 161--163
 []\T1/phv/b/n/12 Éducation [] 
  []
 
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 153.
+(Font)              scaled to size 9.49997pt on input line 165.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 155.
+(Font)              scaled to size 7.59998pt on input line 167.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 157.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 169.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 157.
+(Font)              scaled to size 9.49997pt on input line 169.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 187.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 199.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 7.59998pt on input line 187.
+(Font)              scaled to size 7.59998pt on input line 199.
 
-Overfull \hbox (149.81274pt too wide) in paragraph at lines 214--216
+Overfull \hbox (149.81274pt too wide) in paragraph at lines 226--228
 []\T1/phv/b/n/12 Expérience Pro-fes-sion-nelle [] 
  []
 
 
-Overfull \hbox (40.43137pt too wide) in paragraph at lines 248--251
+Overfull \hbox (40.43137pt too wide) in paragraph at lines 260--263
 []\T1/phv/b/n/12 Projets [] 
  []
 
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.59998pt on input line 252.
+(Font)              scaled to size 7.59998pt on input line 264.
 
-Overfull \hbox (153.05075pt too wide) in paragraph at lines 267--270
+Overfull \hbox (153.05075pt too wide) in paragraph at lines 279--282
 []\T1/phv/b/n/12 Contributions Aca-dé-miques [] 
  []
 
 
-Overfull \hbox (2.01398pt too wide) in paragraph at lines 43--302
+Overfull \hbox (2.01398pt too wide) in paragraph at lines 43--314
 [][]  [] 
  []
 
 <Documentation_FR.png, id=9, 1003.75pt x 1003.75pt>
 File: Documentation_FR.png Graphic file (type png)
 <use Documentation_FR.png>
-Package pdftex.def Info: Documentation_FR.png  used on input line 307.
+Package pdftex.def Info: Documentation_FR.png  used on input line 319.
 (pdftex.def)             Requested size: 56.9055pt x 56.89883pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 312.
+(Font)              scaled to size 6.64998pt on input line 324.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 319.
+(Font)              scaled to size 4.74998pt on input line 331.
 <cvbg.png, id=12, 636.779pt x 901.769pt>
 File: cvbg.png Graphic file (type png)
 <use cvbg.png>
-Package pdftex.def Info: cvbg.png  used on input line 324.
+Package pdftex.def Info: cvbg.png  used on input line 336.
 (pdftex.def)             Requested size: 656.40468pt x 929.56172pt.
 
 Overfull \hbox (58.8968pt too wide) has occurred while \output is active
@@ -633,7 +633,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  84i,12n,87p,455b,697s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on cv(FR).pdf (1 page, 2511682 bytes).
+Output written on cv(FR).pdf (1 page, 2513130 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
