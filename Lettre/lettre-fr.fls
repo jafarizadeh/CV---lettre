@@ -1,6 +1,6 @@
-PWD c:\Users\Lord\Desktop\CV - lettre
+PWD c:\Users\Lord\Desktop\CV - lettre\Lettre
 INPUT C:\Users\Lord\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Lord\Desktop\CV - lettre\lettre-fr.tex
+INPUT c:\Users\Lord\Desktop\CV - lettre\Lettre\lettre-fr.tex
 OUTPUT lettre-fr.log
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\latex\base\letter.cls
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\latex\base\letter.cls
@@ -30,6 +30,8 @@ INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\latex\carlisle\scalefnt.st
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\latex\carlisle\scalefnt.sty
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\latex\lm\lmodern.sty
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\latex\lm\lmodern.sty
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
@@ -52,6 +54,7 @@ INPUT .\lettre-fr.aux
 INPUT lettre-fr.aux
 OUTPUT lettre-fr.aux
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
 OUTPUT lettre-fr.pdf
 INPUT C:\Users\Lord\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
