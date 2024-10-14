@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  12 OCT 2024 12:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  14 OCT 2024 20:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -569,45 +569,50 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 169.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 9.49997pt on input line 169.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 199.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 7.59998pt on input line 199.
 
-Overfull \hbox (149.81274pt too wide) in paragraph at lines 226--228
-[]\T1/phv/b/n/12 Expérience Pro-fes-sion-nelle [] 
- []
-
-
-Overfull \hbox (40.43137pt too wide) in paragraph at lines 260--263
-[]\T1/phv/b/n/12 Projets [] 
+Overfull \hbox (162.1589pt too wide) in paragraph at lines 222--225
+[]\T1/phv/b/n/12 Formations Com-plé-men-taires [] 
  []
 
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.59998pt on input line 264.
+(Font)              scaled to size 7.59998pt on input line 226.
 
-Overfull \hbox (153.05075pt too wide) in paragraph at lines 279--282
+Overfull \hbox (149.81274pt too wide) in paragraph at lines 245--249
+[]\T1/phv/b/n/12 Expérience Pro-fes-sion-nelle []
+ []
+
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 252.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 7.59998pt on input line 252.
+
+Overfull \hbox (40.43137pt too wide) in paragraph at lines 274--277
+[]\T1/phv/b/n/12 Projets [] 
+ []
+
+
+Overfull \hbox (153.05075pt too wide) in paragraph at lines 293--296
 []\T1/phv/b/n/12 Contributions Aca-dé-miques [] 
  []
 
 
-Overfull \hbox (2.01398pt too wide) in paragraph at lines 43--314
+Overfull \hbox (2.01398pt too wide) in paragraph at lines 43--328
 [][]  [] 
  []
 
 <Documentation_FR.png, id=9, 1003.75pt x 1003.75pt>
 File: Documentation_FR.png Graphic file (type png)
 <use Documentation_FR.png>
-Package pdftex.def Info: Documentation_FR.png  used on input line 319.
+Package pdftex.def Info: Documentation_FR.png  used on input line 333.
 (pdftex.def)             Requested size: 56.9055pt x 56.89883pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 324.
+(Font)              scaled to size 6.64998pt on input line 338.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 331.
+(Font)              scaled to size 4.74998pt on input line 345.
 <cvbg.png, id=12, 636.779pt x 901.769pt>
 File: cvbg.png Graphic file (type png)
 <use cvbg.png>
-Package pdftex.def Info: cvbg.png  used on input line 336.
+Package pdftex.def Info: cvbg.png  used on input line 350.
 (pdftex.def)             Requested size: 656.40468pt x 929.56172pt.
 
 Overfull \hbox (58.8968pt too wide) has occurred while \output is active
@@ -625,15 +630,15 @@ Package rerunfilecheck Info: File `cv(FR).out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25069 strings out of 474486
- 486300 string characters out of 5744227
- 1951542 words of memory out of 5000000
- 46959 multiletter control sequences out of 15000+600000
+ 25071 strings out of 474486
+ 486323 string characters out of 5744227
+ 1952542 words of memory out of 5000000
+ 46961 multiletter control sequences out of 15000+600000
  590485 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,87p,455b,697s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on cv(FR).pdf (1 page, 2513130 bytes).
+Output written on cv(FR).pdf (1 page, 2514482 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
