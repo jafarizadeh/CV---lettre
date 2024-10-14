@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  14 OCT 2024 20:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  14 OCT 2024 20:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -632,13 +632,13 @@ Package rerunfilecheck Info: File `cv(FR).out' has not changed.
 Here is how much of TeX's memory you used:
  25071 strings out of 474486
  486323 string characters out of 5744227
- 1952542 words of memory out of 5000000
+ 1953542 words of memory out of 5000000
  46961 multiletter control sequences out of 15000+600000
  590485 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,87p,455b,697s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on cv(FR).pdf (1 page, 2514482 bytes).
+Output written on cv(FR).pdf (1 page, 2514491 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
