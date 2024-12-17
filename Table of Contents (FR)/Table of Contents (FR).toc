@@ -7,7 +7,7 @@
 \contentsline {subsection}{\numberline {3.1}Assistant d'Enseignement}{13}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Fondateur de l'Association d'Ingénierie de l'Énergie}{15}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Directeur de l'Association d'Ingénierie de l'Énergie}{17}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Contributions Académiques}{19}{section.4}%
+\contentsline {section}{\numberline {4}Projets}{19}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Co-auteur}{19}{subsection.4.1}%
 \contentsline {section}{\numberline {5}Certificats de Fin de Cours}{21}{section.5}%
 \contentsline {subsection}{\numberline {5.1}CCNA 200-301}{21}{subsection.5.1}%
