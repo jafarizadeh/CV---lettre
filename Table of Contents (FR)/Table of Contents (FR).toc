@@ -1,8 +1,8 @@
 \contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
 \contentsline {section}{\numberline {2}Éducation}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Comptabilité}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Ingénierie des Énergies Renouvelables}{8}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Informatics}{12}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.1}Informatics}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Ingénierie des Énergies Renouvelables}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Comptabilité}{9}{subsection.2.3}%
 \contentsline {section}{\numberline {3}Expérience Professionnelle}{13}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Assistant d'Enseignement}{13}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Fondateur de l'Association d'Ingénierie de l'Énergie}{15}{subsection.3.2}%
