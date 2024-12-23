@@ -10,24 +10,24 @@
 \contentsline {section}{\numberline {4}Projets}{19}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Co-auteur}{19}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Développement d'un Système de Base de Données}{21}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Génération et résolution de labyrinthes}{21}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Graphe dual d’un maillage}{21}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Affichage et générateur de grille de mots croisés}{21}{subsection.4.5}%
-\contentsline {section}{\numberline {5}Certificats de Fin de Cours}{22}{section.5}%
-\contentsline {subsection}{\numberline {5.1}CCNA 200-301}{22}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}CCNP ENARSI 300-410}{23}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}IT network cabling: The complete fiber optics}{24}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Devenir administrateur administratrice reseau}{25}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Devenir administrateur administratrice systeme linux}{26}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Wireshark for Beginners: Capture Packets}{27}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Initiation à Wireshark pour l'analyse de paquets sous linux}{28}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}Google Cloud Fundamentals: Core Infrastructure}{29}{subsection.5.8}%
-\contentsline {section}{\numberline {6}Certificats d'Accomplissement}{30}{section.6}%
-\contentsline {subsection}{\numberline {6.1}MATLAB}{30}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}CCNA 200-301}{31}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Compétitions Scientifiques}{33}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Conception et Fabrication d'Éoliennes}{33}{subsection.7.1}%
-\contentsline {section}{\numberline {8}Certificate of Appreciation}{35}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Conférence du Professeur Soumchai Wangouiez}{35}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Atelier EES (Engineering Equations Solver)}{37}{subsection.8.2}%
-\contentsline {section}{\numberline {9}Conclusion et Prochaines Étapes}{39}{section.9}%
+\contentsline {subsection}{\numberline {4.3}Génération et résolution de labyrinthes}{22}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Graphe dual d’un maillage}{23}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Affichage et générateur de grille de mots croisés}{24}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Certificats de Fin de Cours}{25}{section.5}%
+\contentsline {subsection}{\numberline {5.1}CCNA 200-301}{25}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}CCNP ENARSI 300-410}{26}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}IT network cabling: The complete fiber optics}{27}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Devenir administrateur administratrice reseau}{28}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Devenir administrateur administratrice systeme linux}{29}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Wireshark for Beginners: Capture Packets}{30}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Initiation à Wireshark pour l'analyse de paquets sous linux}{31}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Google Cloud Fundamentals: Core Infrastructure}{32}{subsection.5.8}%
+\contentsline {section}{\numberline {6}Certificats d'Accomplissement}{33}{section.6}%
+\contentsline {subsection}{\numberline {6.1}MATLAB}{33}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}CCNA 200-301}{34}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Compétitions Scientifiques}{36}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Conception et Fabrication d'Éoliennes}{36}{subsection.7.1}%
+\contentsline {section}{\numberline {8}Certificate of Appreciation}{38}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Conférence du Professeur Soumchai Wangouiez}{38}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Atelier EES (Engineering Equations Solver)}{40}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Conclusion et Prochaines Étapes}{42}{section.9}%

@@ -1,0 +1,825 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 17.2
+-- Dumped by pg_dump version 17.2
+
+-- Started on 2024-11-27 10:42:19
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET transaction_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 245 (class 1255 OID 16509)
+-- Name: enforce_bookmark_limit(); Type: FUNCTION; Schema: public; Owner: postgres
+--
+
+CREATE FUNCTION public.enforce_bookmark_limit() RETURNS trigger
+    LANGUAGE plpgsql
+    AS $$
+BEGIN
+    -- Check the current number of bookmarks for the user
+    IF (
+        SELECT COUNT(*) 
+        FROM favorite_videos 
+        WHERE user_id = NEW.user_id
+    ) >= 300 THEN
+        -- Raise an error if the limit is exceeded
+        RAISE EXCEPTION 'User % cannot bookmark more than 300 videos.', NEW.user_id;
+    END IF;
+
+    -- Allow the insertion if the limit is not exceeded
+    RETURN NEW;
+END;
+$$;
+
+
+ALTER FUNCTION public.enforce_bookmark_limit() OWNER TO postgres;
+
+--
+-- TOC entry 232 (class 1255 OID 16507)
+-- Name: generate_weekly_newsletter(); Type: PROCEDURE; Schema: public; Owner: postgres
+--
+
+CREATE PROCEDURE public.generate_weekly_newsletter()
+    LANGUAGE plpgsql
+    AS $$
+DECLARE
+    current_week_start DATE := DATE_TRUNC('week', CURRENT_DATE); -- Start of the current week
+    current_week_end DATE := current_week_start + INTERVAL '6 days'; -- End of the current week
+    weekly_releases TEXT := ''; -- Accumulator for video releases
+    video_record RECORD;
+BEGIN
+    -- Loop through all video releases of the week
+    FOR video_record IN 
+        SELECT 
+            name, 
+            release_date, 
+            description 
+        FROM 
+            videos 
+        WHERE 
+            release_date BETWEEN current_week_start AND current_week_end
+    LOOP
+        -- Append each video to the weekly releases text
+        weekly_releases := weekly_releases || 
+            '• ' || video_record.name || ' (Released on: ' || video_record.release_date || ') - ' || 
+            video_record.description || E'\n';
+    END LOOP;
+
+    -- Output the final newsletter text
+    RAISE NOTICE 'Weekly Newsletter: %', 
+    E'Here are this week\'s new releases:\n\n' || weekly_releases || 
+    E'\nStay tuned for more updates!';
+
+END;
+$$;
+
+
+ALTER PROCEDURE public.generate_weekly_newsletter() OWNER TO postgres;
+
+--
+-- TOC entry 231 (class 1255 OID 16506)
+-- Name: get_video_json(integer); Type: FUNCTION; Schema: public; Owner: postgres
+--
+
+CREATE FUNCTION public.get_video_json(video_id_input integer) RETURNS json
+    LANGUAGE plpgsql
+    AS $$
+DECLARE
+    video_info JSON;
+BEGIN
+    SELECT 
+        JSON_BUILD_OBJECT(
+            'video_id', v.video_id,
+            'name', v.name,
+            'description', v.description,
+            'duration', v.duration,
+            'release_date', v.release_date,
+            'country_of_origin', v.country_of_origin,
+            'multi_language_available', v.multi_language_available,
+            'image_format', v.image_format,
+            'status', v.status,
+            'program', JSON_BUILD_OBJECT(
+                'program_id', p.program_id,
+                'program_name', p.name
+            )
+        )
+    INTO video_info
+    FROM videos v
+    LEFT JOIN programs p ON v.program_id = p.program_id
+    WHERE v.video_id = video_id_input;
+
+    RETURN video_info;
+END;
+$$;
+
+
+ALTER FUNCTION public.get_video_json(video_id_input integer) OWNER TO postgres;
+
+--
+-- TOC entry 244 (class 1255 OID 16508)
+-- Name: recommend_videos(integer); Type: FUNCTION; Schema: public; Owner: postgres
+--
+
+CREATE FUNCTION public.recommend_videos(user_id_input integer) RETURNS TABLE(video_id integer, video_name text, description text, release_date date, popularity_score integer)
+    LANGUAGE plpgsql
+    AS $$
+BEGIN
+    RETURN QUERY
+    SELECT 
+        v.video_id,
+        v.name AS video_name,
+        v.description,
+        v.release_date,
+        COUNT(vv.viewing_id) AS popularity_score
+    FROM 
+        videos v
+    JOIN 
+        programs p ON v.program_id = p.program_id
+    JOIN 
+        categories c ON p.category_id = c.category_id
+    JOIN 
+        users u ON u.user_id = user_id_input
+    LEFT JOIN 
+        video_viewings vv ON v.video_id = vv.video_id
+    WHERE 
+        c.category_id = ANY(u.interested_categories) -- Matches user's followed categories
+        AND v.status = 'Available'
+    GROUP BY 
+        v.video_id, v.name, v.description, v.release_date
+    ORDER BY 
+        popularity_score DESC, v.release_date DESC
+    LIMIT 10;
+END;
+$$;
+
+
+ALTER FUNCTION public.recommend_videos(user_id_input integer) OWNER TO postgres;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- TOC entry 220 (class 1259 OID 16404)
+-- Name: categories; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.categories (
+    category_id integer NOT NULL,
+    name character varying(50) NOT NULL
+);
+
+
+ALTER TABLE public.categories OWNER TO postgres;
+
+--
+-- TOC entry 219 (class 1259 OID 16403)
+-- Name: categories_category_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.categories_category_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.categories_category_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 4939 (class 0 OID 0)
+-- Dependencies: 219
+-- Name: categories_category_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.categories_category_id_seq OWNED BY public.categories.category_id;
+
+
+--
+-- TOC entry 225 (class 1259 OID 16440)
+-- Name: favorite_videos; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.favorite_videos (
+    user_id integer NOT NULL,
+    video_id integer NOT NULL
+);
+
+
+ALTER TABLE public.favorite_videos OWNER TO postgres;
+
+--
+-- TOC entry 222 (class 1259 OID 16413)
+-- Name: programs; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.programs (
+    program_id integer NOT NULL,
+    name character varying(100) NOT NULL,
+    category_id integer
+);
+
+
+ALTER TABLE public.programs OWNER TO postgres;
+
+--
+-- TOC entry 221 (class 1259 OID 16412)
+-- Name: programs_program_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.programs_program_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.programs_program_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 4940 (class 0 OID 0)
+-- Dependencies: 221
+-- Name: programs_program_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.programs_program_id_seq OWNED BY public.programs.program_id;
+
+
+--
+-- TOC entry 230 (class 1259 OID 16491)
+-- Name: subscribed_programs; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.subscribed_programs (
+    user_id integer NOT NULL,
+    program_id integer NOT NULL
+);
+
+
+ALTER TABLE public.subscribed_programs OWNER TO postgres;
+
+--
+-- TOC entry 218 (class 1259 OID 16390)
+-- Name: users; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.users (
+    user_id integer NOT NULL,
+    login character varying(50) NOT NULL,
+    password character varying(255) NOT NULL,
+    first_name character varying(50),
+    last_name character varying(50),
+    date_of_birth date,
+    email character varying(100),
+    interested_categories text[],
+    newsletter_subscription boolean DEFAULT false,
+    country character varying(50)
+);
+
+
+ALTER TABLE public.users OWNER TO postgres;
+
+--
+-- TOC entry 217 (class 1259 OID 16389)
+-- Name: users_user_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.users_user_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.users_user_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 4941 (class 0 OID 0)
+-- Dependencies: 217
+-- Name: users_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.users_user_id_seq OWNED BY public.users.user_id;
+
+
+--
+-- TOC entry 227 (class 1259 OID 16456)
+-- Name: video_viewings; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.video_viewings (
+    viewing_id integer NOT NULL,
+    user_id integer,
+    video_id integer,
+    viewing_timestamp timestamp without time zone DEFAULT CURRENT_TIMESTAMP
+);
+
+
+ALTER TABLE public.video_viewings OWNER TO postgres;
+
+--
+-- TOC entry 226 (class 1259 OID 16455)
+-- Name: video_viewings_viewing_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.video_viewings_viewing_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.video_viewings_viewing_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 4942 (class 0 OID 0)
+-- Dependencies: 226
+-- Name: video_viewings_viewing_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.video_viewings_viewing_id_seq OWNED BY public.video_viewings.viewing_id;
+
+
+--
+-- TOC entry 224 (class 1259 OID 16425)
+-- Name: videos; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.videos (
+    video_id integer NOT NULL,
+    name character varying(100) NOT NULL,
+    description text,
+    duration interval NOT NULL,
+    release_date date NOT NULL,
+    country_of_origin character varying(50),
+    multi_language_available boolean DEFAULT false,
+    image_format character varying(50),
+    status character varying(10) DEFAULT 'Available'::character varying,
+    program_id integer
+);
+
+
+ALTER TABLE public.videos OWNER TO postgres;
+
+--
+-- TOC entry 223 (class 1259 OID 16424)
+-- Name: videos_video_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.videos_video_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.videos_video_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 4943 (class 0 OID 0)
+-- Dependencies: 223
+-- Name: videos_video_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.videos_video_id_seq OWNED BY public.videos.video_id;
+
+
+--
+-- TOC entry 229 (class 1259 OID 16474)
+-- Name: viewing_suggestions; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.viewing_suggestions (
+    suggestion_id integer NOT NULL,
+    generated_timestamp timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+    category_id integer,
+    video_id integer
+);
+
+
+ALTER TABLE public.viewing_suggestions OWNER TO postgres;
+
+--
+-- TOC entry 228 (class 1259 OID 16473)
+-- Name: viewing_suggestions_suggestion_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.viewing_suggestions_suggestion_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.viewing_suggestions_suggestion_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 4944 (class 0 OID 0)
+-- Dependencies: 228
+-- Name: viewing_suggestions_suggestion_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.viewing_suggestions_suggestion_id_seq OWNED BY public.viewing_suggestions.suggestion_id;
+
+
+--
+-- TOC entry 4734 (class 2604 OID 16407)
+-- Name: categories category_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.categories ALTER COLUMN category_id SET DEFAULT nextval('public.categories_category_id_seq'::regclass);
+
+
+--
+-- TOC entry 4735 (class 2604 OID 16416)
+-- Name: programs program_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.programs ALTER COLUMN program_id SET DEFAULT nextval('public.programs_program_id_seq'::regclass);
+
+
+--
+-- TOC entry 4732 (class 2604 OID 16393)
+-- Name: users user_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.users ALTER COLUMN user_id SET DEFAULT nextval('public.users_user_id_seq'::regclass);
+
+
+--
+-- TOC entry 4739 (class 2604 OID 16459)
+-- Name: video_viewings viewing_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.video_viewings ALTER COLUMN viewing_id SET DEFAULT nextval('public.video_viewings_viewing_id_seq'::regclass);
+
+
+--
+-- TOC entry 4736 (class 2604 OID 16428)
+-- Name: videos video_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.videos ALTER COLUMN video_id SET DEFAULT nextval('public.videos_video_id_seq'::regclass);
+
+
+--
+-- TOC entry 4741 (class 2604 OID 16477)
+-- Name: viewing_suggestions suggestion_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.viewing_suggestions ALTER COLUMN suggestion_id SET DEFAULT nextval('public.viewing_suggestions_suggestion_id_seq'::regclass);
+
+
+--
+-- TOC entry 4923 (class 0 OID 16404)
+-- Dependencies: 220
+-- Data for Name: categories; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.categories (category_id, name) FROM stdin;
+\.
+
+
+--
+-- TOC entry 4928 (class 0 OID 16440)
+-- Dependencies: 225
+-- Data for Name: favorite_videos; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.favorite_videos (user_id, video_id) FROM stdin;
+\.
+
+
+--
+-- TOC entry 4925 (class 0 OID 16413)
+-- Dependencies: 222
+-- Data for Name: programs; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.programs (program_id, name, category_id) FROM stdin;
+\.
+
+
+--
+-- TOC entry 4933 (class 0 OID 16491)
+-- Dependencies: 230
+-- Data for Name: subscribed_programs; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.subscribed_programs (user_id, program_id) FROM stdin;
+\.
+
+
+--
+-- TOC entry 4921 (class 0 OID 16390)
+-- Dependencies: 218
+-- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.users (user_id, login, password, first_name, last_name, date_of_birth, email, interested_categories, newsletter_subscription, country) FROM stdin;
+\.
+
+
+--
+-- TOC entry 4930 (class 0 OID 16456)
+-- Dependencies: 227
+-- Data for Name: video_viewings; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.video_viewings (viewing_id, user_id, video_id, viewing_timestamp) FROM stdin;
+\.
+
+
+--
+-- TOC entry 4927 (class 0 OID 16425)
+-- Dependencies: 224
+-- Data for Name: videos; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.videos (video_id, name, description, duration, release_date, country_of_origin, multi_language_available, image_format, status, program_id) FROM stdin;
+\.
+
+
+--
+-- TOC entry 4932 (class 0 OID 16474)
+-- Dependencies: 229
+-- Data for Name: viewing_suggestions; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.viewing_suggestions (suggestion_id, generated_timestamp, category_id, video_id) FROM stdin;
+\.
+
+
+--
+-- TOC entry 4945 (class 0 OID 0)
+-- Dependencies: 219
+-- Name: categories_category_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.categories_category_id_seq', 1, false);
+
+
+--
+-- TOC entry 4946 (class 0 OID 0)
+-- Dependencies: 221
+-- Name: programs_program_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.programs_program_id_seq', 1, false);
+
+
+--
+-- TOC entry 4947 (class 0 OID 0)
+-- Dependencies: 217
+-- Name: users_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.users_user_id_seq', 1, false);
+
+
+--
+-- TOC entry 4948 (class 0 OID 0)
+-- Dependencies: 226
+-- Name: video_viewings_viewing_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.video_viewings_viewing_id_seq', 1, false);
+
+
+--
+-- TOC entry 4949 (class 0 OID 0)
+-- Dependencies: 223
+-- Name: videos_video_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.videos_video_id_seq', 1, false);
+
+
+--
+-- TOC entry 4950 (class 0 OID 0)
+-- Dependencies: 228
+-- Name: viewing_suggestions_suggestion_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.viewing_suggestions_suggestion_id_seq', 1, false);
+
+
+--
+-- TOC entry 4750 (class 2606 OID 16411)
+-- Name: categories categories_name_key; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.categories
+    ADD CONSTRAINT categories_name_key UNIQUE (name);
+
+
+--
+-- TOC entry 4752 (class 2606 OID 16409)
+-- Name: categories categories_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.categories
+    ADD CONSTRAINT categories_pkey PRIMARY KEY (category_id);
+
+
+--
+-- TOC entry 4758 (class 2606 OID 16444)
+-- Name: favorite_videos favorite_videos_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.favorite_videos
+    ADD CONSTRAINT favorite_videos_pkey PRIMARY KEY (user_id, video_id);
+
+
+--
+-- TOC entry 4754 (class 2606 OID 16418)
+-- Name: programs programs_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.programs
+    ADD CONSTRAINT programs_pkey PRIMARY KEY (program_id);
+
+
+--
+-- TOC entry 4764 (class 2606 OID 16495)
+-- Name: subscribed_programs subscribed_programs_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.subscribed_programs
+    ADD CONSTRAINT subscribed_programs_pkey PRIMARY KEY (user_id, program_id);
+
+
+--
+-- TOC entry 4744 (class 2606 OID 16402)
+-- Name: users users_email_key; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.users
+    ADD CONSTRAINT users_email_key UNIQUE (email);
+
+
+--
+-- TOC entry 4746 (class 2606 OID 16400)
+-- Name: users users_login_key; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.users
+    ADD CONSTRAINT users_login_key UNIQUE (login);
+
+
+--
+-- TOC entry 4748 (class 2606 OID 16398)
+-- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.users
+    ADD CONSTRAINT users_pkey PRIMARY KEY (user_id);
+
+
+--
+-- TOC entry 4760 (class 2606 OID 16462)
+-- Name: video_viewings video_viewings_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.video_viewings
+    ADD CONSTRAINT video_viewings_pkey PRIMARY KEY (viewing_id);
+
+
+--
+-- TOC entry 4756 (class 2606 OID 16434)
+-- Name: videos videos_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.videos
+    ADD CONSTRAINT videos_pkey PRIMARY KEY (video_id);
+
+
+--
+-- TOC entry 4762 (class 2606 OID 16480)
+-- Name: viewing_suggestions viewing_suggestions_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.viewing_suggestions
+    ADD CONSTRAINT viewing_suggestions_pkey PRIMARY KEY (suggestion_id);
+
+
+--
+-- TOC entry 4767 (class 2606 OID 16445)
+-- Name: favorite_videos favorite_videos_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.favorite_videos
+    ADD CONSTRAINT favorite_videos_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(user_id) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 4768 (class 2606 OID 16450)
+-- Name: favorite_videos favorite_videos_video_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.favorite_videos
+    ADD CONSTRAINT favorite_videos_video_id_fkey FOREIGN KEY (video_id) REFERENCES public.videos(video_id) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 4765 (class 2606 OID 16419)
+-- Name: programs programs_category_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.programs
+    ADD CONSTRAINT programs_category_id_fkey FOREIGN KEY (category_id) REFERENCES public.categories(category_id) ON DELETE SET NULL;
+
+
+--
+-- TOC entry 4773 (class 2606 OID 16501)
+-- Name: subscribed_programs subscribed_programs_program_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.subscribed_programs
+    ADD CONSTRAINT subscribed_programs_program_id_fkey FOREIGN KEY (program_id) REFERENCES public.programs(program_id) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 4774 (class 2606 OID 16496)
+-- Name: subscribed_programs subscribed_programs_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.subscribed_programs
+    ADD CONSTRAINT subscribed_programs_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(user_id) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 4769 (class 2606 OID 16463)
+-- Name: video_viewings video_viewings_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.video_viewings
+    ADD CONSTRAINT video_viewings_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(user_id) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 4770 (class 2606 OID 16468)
+-- Name: video_viewings video_viewings_video_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.video_viewings
+    ADD CONSTRAINT video_viewings_video_id_fkey FOREIGN KEY (video_id) REFERENCES public.videos(video_id) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 4766 (class 2606 OID 16435)
+-- Name: videos videos_program_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.videos
+    ADD CONSTRAINT videos_program_id_fkey FOREIGN KEY (program_id) REFERENCES public.programs(program_id) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 4771 (class 2606 OID 16481)
+-- Name: viewing_suggestions viewing_suggestions_category_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.viewing_suggestions
+    ADD CONSTRAINT viewing_suggestions_category_id_fkey FOREIGN KEY (category_id) REFERENCES public.categories(category_id) ON DELETE CASCADE;
+
+
+--
+-- TOC entry 4772 (class 2606 OID 16486)
+-- Name: viewing_suggestions viewing_suggestions_video_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.viewing_suggestions
+    ADD CONSTRAINT viewing_suggestions_video_id_fkey FOREIGN KEY (video_id) REFERENCES public.videos(video_id) ON DELETE CASCADE;
+
+
+-- Completed on 2024-11-27 10:42:19
+
+--
+-- PostgreSQL database dump complete
+--
+
