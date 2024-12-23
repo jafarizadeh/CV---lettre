@@ -27,7 +27,7 @@
 \contentsline {subsection}{\numberline {6.2}CCNA 200-301}{31}{subsection.6.2}%
 \contentsline {section}{\numberline {7}Compétitions Scientifiques}{33}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Conception et Fabrication d'Éoliennes}{33}{subsection.7.1}%
-\contentsline {section}{\numberline {8}Certificat de Reconnaissance}{35}{section.8}%
+\contentsline {section}{\numberline {8}Certificate of Appreciation}{35}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Conférence du Professeur Soumchai Wangouiez}{35}{subsection.8.1}%
 \contentsline {subsection}{\numberline {8.2}Atelier EES (Engineering Equations Solver)}{37}{subsection.8.2}%
 \contentsline {section}{\numberline {9}Conclusion et Prochaines Étapes}{39}{section.9}%
