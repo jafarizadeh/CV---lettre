@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  23 DEC 2024 20:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  23 DEC 2024 20:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -412,12 +412,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 261--264
 
  []
 
-<5-2.png, id=293, 1606.0pt x 1194.4625pt>
-File: 5-2.png Graphic file (type png)
-<use 5-2.png>
-Package pdftex.def Info: 5-2.png  used on input line 266.
+<../Document/Certificats de Fin de Cours/CCNP ENARSI 300-410/CCNP ENARSI 300-410.pdf, id=293, 1606.0pt x 1194.4625pt>
+File: ../Document/Certificats de Fin de Cours/CCNP ENARSI 300-410/CCNP ENARSI 300-410.pdf Graphic file (type pdf)
+<use ../Document/Certificats de Fin de Cours/CCNP ENARSI 300-410/CCNP ENARSI 300-410.pdf>
+Package pdftex.def Info: ../Document/Certificats de Fin de Cours/CCNP ENARSI 300-410/CCNP ENARSI 300-410.pdf  used on input line 266.
 (pdftex.def)             Requested size: 344.98921pt x 256.58571pt.
-[23 <./5-2.png>]
+[23 <../Document/Certificats de Fin de Cours/CCNP ENARSI 300-410/CCNP ENARSI 300-410.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 278--281
 
  []
@@ -437,13 +437,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 295--298
 
  []
 
-<5-3.png, id=304, 1662.21pt x 1266.53175pt>
+<5-3.png, id=306, 1662.21pt x 1266.53175pt>
 File: 5-3.png Graphic file (type png)
 <use 5-3.png>
 Package pdftex.def Info: 5-3.png  used on input line 300.
 (pdftex.def)             Requested size: 344.99092pt x 262.86807pt.
 [25 <./5-3.png>]
-<5-4.png, id=313, 1668.2325pt x 1269.543pt>
+<5-4.png, id=315, 1668.2325pt x 1269.543pt>
 File: 5-4.png Graphic file (type png)
 <use 5-4.png>
 Package pdftex.def Info: 5-4.png  used on input line 311.
@@ -458,7 +458,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 320--323
 
  []
 
-<5-5.png, id=320, 1669.437pt x 1274.96326pt>
+<5-5.png, id=322, 1669.437pt x 1274.96326pt>
 File: 5-5.png Graphic file (type png)
 <use 5-5.png>
 Package pdftex.def Info: 5-5.png  used on input line 324.
@@ -473,7 +473,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 335--338
 
  []
 
-<5-6.png, id=327, 1671.846pt x 1290.0195pt>
+<5-6.png, id=329, 1671.846pt x 1290.0195pt>
 File: 5-6.png Graphic file (type png)
 <use 5-6.png>
 Package pdftex.def Info: 5-6.png  used on input line 339.
@@ -488,7 +488,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 357--360
 
  []
 
-<6-1-1.jpg, id=334, 823.1553pt x 577.1964pt>
+<6-1-1.jpg, id=336, 823.1553pt x 577.1964pt>
 File: 6-1-1.jpg Graphic file (type jpg)
 <use 6-1-1.jpg>
 Package pdftex.def Info: 6-1-1.jpg  used on input line 361.
@@ -514,7 +514,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 391--395
  []
 
 [31]
-<7-1.jpg, id=350, 588.5187pt x 840.0183pt>
+<7-1.jpg, id=352, 588.5187pt x 840.0183pt>
 File: 7-1.jpg Graphic file (type jpg)
 <use 7-1.jpg>
 Package pdftex.def Info: 7-1.jpg  used on input line 400.
@@ -525,7 +525,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--420
  []
 
 [33]
-<8-1.jpg, id=360, 588.7596pt x 844.3545pt>
+<8-1.jpg, id=362, 588.7596pt x 844.3545pt>
 File: 8-1.jpg Graphic file (type jpg)
 <use 8-1.jpg>
 Package pdftex.def Info: 8-1.jpg  used on input line 423.
@@ -536,7 +536,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 431--435
  []
 
 [35]
-<8-2.jpg, id=370, 588.2778pt x 843.15pt>
+<8-2.jpg, id=372, 588.2778pt x 843.15pt>
 File: 8-2.jpg Graphic file (type jpg)
 <use 8-2.jpg>
 Package pdftex.def Info: 8-2.jpg  used on input line 440.
@@ -556,16 +556,16 @@ Package rerunfilecheck Info: File `"Table of Contents (FR)".out' has not changed
  ) 
 Here is how much of TeX's memory you used:
  9046 strings out of 474486
- 151690 string characters out of 5744227
+ 152246 string characters out of 5744227
  1942542 words of memory out of 5000000
  31170 multiletter control sequences out of 15000+600000
  562969 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,6n,93p,1060b,546s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Table of Contents (FR).pdf" (37 pages, 11123136 bytes).
+Output written on "Table of Contents (FR).pdf" (37 pages, 11123728 bytes).
 PDF statistics:
- 437 PDF objects out of 1000 (max. 8388607)
+ 439 PDF objects out of 1000 (max. 8388607)
  71 named destinations out of 1000 (max. 500000)
  352 words of extra memory for PDF output out of 10000 (max. 10000000)
 
