@@ -90,18 +90,9 @@ INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphic
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT .\Table of Contents (FR).aux
-INPUT .\Table of Contents (FR).aux
-INPUT Table of Contents (FR).aux
 OUTPUT Table of Contents (FR).aux
-INPUT .\Table of Contents (FR).out
-INPUT .\Table of Contents (FR).out
-INPUT Table of Contents (FR).out
-INPUT Table of Contents (FR).out
-OUTPUT Table of Contents (FR).pdf
-INPUT .\Table of Contents (FR).out
-INPUT .\Table of Contents (FR).out
 OUTPUT Table of Contents (FR).out
+OUTPUT Table of Contents (FR).pdf
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -122,13 +113,10 @@ INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT .\Table of Contents (FR).toc
-INPUT .\Table of Contents (FR).toc
-INPUT Table of Contents (FR).toc
-INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
-INPUT C:\Users\Lord\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 OUTPUT Table of Contents (FR).toc
+INPUT C:\Users\Lord\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT ..\Document\Education\Renewable Energy Engineering\21-02-2018 diplôme - Génie énergétique.jpg
 INPUT ..\Document\Education\Renewable Energy Engineering\21-02-2018 diplôme - Génie énergétique.jpg
