@@ -1,33 +1,33 @@
-\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
-\contentsline {section}{\numberline {2}Éducation}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Informatics}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Ingénierie des Énergies Renouvelables}{4}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Comptabilité}{8}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Expérience Professionnelle}{12}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Assistant d'Enseignement}{12}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Fondateur de l'Association d'Ingénierie de l'Énergie}{14}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Directeur de l'Association d'Ingénierie de l'Énergie}{16}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Projets}{18}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Co-auteur}{18}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Développement d'un Système de Base de Données}{20}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Génération et résolution de labyrinthes}{20}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Graphe dual d’un maillage}{20}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Affichage et générateur de grille de mots croisés}{20}{subsection.4.5}%
-\contentsline {section}{\numberline {5}Certificats de Fin de Cours}{21}{section.5}%
-\contentsline {subsection}{\numberline {5.1}CCNA 200-301}{21}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}CCNP ENARSI 300-410}{22}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}IT network cabling: The complete fiber optics}{23}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Devenir administrateur administratrice reseau}{24}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Devenir administrateur administratrice systeme linux}{25}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Wireshark for Beginners: Capture Packets}{26}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Initiation à Wireshark pour l'analyse de paquets sous linux}{27}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}Google Cloud Fundamentals: Core Infrastructure}{28}{subsection.5.8}%
-\contentsline {section}{\numberline {6}Certificats d'Accomplissement}{29}{section.6}%
-\contentsline {subsection}{\numberline {6.1}MATLAB}{29}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}CCNA 200-301}{30}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Compétitions Scientifiques}{31}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Conception et Fabrication d'Éoliennes}{31}{subsection.7.1}%
-\contentsline {section}{\numberline {8}Certificat de Reconnaissance}{33}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Conférence du Professeur Soumchai Wangouiez}{33}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Atelier EES (Engineering Equations Solver)}{35}{subsection.8.2}%
-\contentsline {section}{\numberline {9}Conclusion et Prochaines Étapes}{37}{section.9}%
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {section}{\numberline {2}Éducation}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Informatics}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Ingénierie des Énergies Renouvelables}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Comptabilité}{9}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Expérience Professionnelle}{13}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Assistant d'Enseignement}{13}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Fondateur de l'Association d'Ingénierie de l'Énergie}{15}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Directeur de l'Association d'Ingénierie de l'Énergie}{17}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Projets}{19}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Co-auteur}{19}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Développement d'un Système de Base de Données}{21}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Génération et résolution de labyrinthes}{21}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Graphe dual d’un maillage}{21}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Affichage et générateur de grille de mots croisés}{21}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Certificats de Fin de Cours}{22}{section.5}%
+\contentsline {subsection}{\numberline {5.1}CCNA 200-301}{22}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}CCNP ENARSI 300-410}{23}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}IT network cabling: The complete fiber optics}{24}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Devenir administrateur administratrice reseau}{25}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Devenir administrateur administratrice systeme linux}{26}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Wireshark for Beginners: Capture Packets}{27}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Initiation à Wireshark pour l'analyse de paquets sous linux}{28}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Google Cloud Fundamentals: Core Infrastructure}{29}{subsection.5.8}%
+\contentsline {section}{\numberline {6}Certificats d'Accomplissement}{30}{section.6}%
+\contentsline {subsection}{\numberline {6.1}MATLAB}{30}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}CCNA 200-301}{31}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Compétitions Scientifiques}{33}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Conception et Fabrication d'Éoliennes}{33}{subsection.7.1}%
+\contentsline {section}{\numberline {8}Certificat de Reconnaissance}{35}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Conférence du Professeur Soumchai Wangouiez}{35}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Atelier EES (Engineering Equations Solver)}{37}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Conclusion et Prochaines Étapes}{39}{section.9}%
