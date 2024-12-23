@@ -17,16 +17,17 @@
 \contentsline {subsection}{\numberline {5.1}CCNA 200-301}{22}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}CCNP ENARSI 300-410}{23}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}IT network cabling: The complete fiber optics}{24}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Wireshark for Beginners: Capture Packets}{25}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Initiation à Wireshark pour l'analyse de paquets sous linux}{26}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Configure VLANs on Cisco Switches}{27}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Google Cloud Fundamentals: Core Infrastructure}{28}{subsection.5.7}%
-\contentsline {section}{\numberline {6}Certificats d'Accomplissement}{29}{section.6}%
-\contentsline {subsection}{\numberline {6.1}MATLAB}{29}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}CCNA 200-301}{30}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Compétitions Scientifiques}{31}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Conception et Fabrication d'Éoliennes}{31}{subsection.7.1}%
-\contentsline {section}{\numberline {8}Certificat de Reconnaissance}{33}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Conférence du Professeur Soumchai Wangouiez}{33}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Atelier EES (Engineering Equations Solver)}{35}{subsection.8.2}%
-\contentsline {section}{\numberline {9}Conclusion et Prochaines Étapes}{37}{section.9}%
+\contentsline {subsection}{\numberline {5.4}Devenir administrateur administratrice reseau}{25}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Devenir administrateur administratrice systeme linux}{26}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Wireshark for Beginners: Capture Packets}{27}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Initiation à Wireshark pour l'analyse de paquets sous linux}{28}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Google Cloud Fundamentals: Core Infrastructure}{29}{subsection.5.8}%
+\contentsline {section}{\numberline {6}Certificats d'Accomplissement}{30}{section.6}%
+\contentsline {subsection}{\numberline {6.1}MATLAB}{30}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}CCNA 200-301}{31}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Compétitions Scientifiques}{32}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Conception et Fabrication d'Éoliennes}{32}{subsection.7.1}%
+\contentsline {section}{\numberline {8}Certificat de Reconnaissance}{34}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Conférence du Professeur Soumchai Wangouiez}{34}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Atelier EES (Engineering Equations Solver)}{36}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Conclusion et Prochaines Étapes}{38}{section.9}%
