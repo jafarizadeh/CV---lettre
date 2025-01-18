@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1729420730.69732 "c:/Users/Lord/Desktop/CV - lettre/CV/CV (FR)/cv(FR).tex" "cv(FR).pdf" "cv(FR)" 1729420731.5192 2
-  "C:/Users/Lord/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1728599484 96953 8cded1dc387636eb586a8a7962886859 ""
+["pdflatex"] 1737213189.95431 "c:/Users/Lord/Desktop/CV - lettre/CV/CV (FR)/cv(FR).tex" "cv(FR).pdf" "cv(FR)" 1737213190.72989 0
+  "C:/Users/Lord/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1736956391 173485 f1241580a49f8a22ea90f661f283298a ""
   "C:/Users/Lord/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725139274 24224574 dc7f1ddfa7aa0d1a39bc372d14d1d367 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1651500229 2920 d63721872b8c77041b88e51b8f7c291d ""
@@ -109,6 +109,7 @@
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/base/letter.cls" 1705273578 13728 00a8fec9800693697d85a009120ef1ef ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/base/size10.clo" 1705273578 8448 dbc0dbf4156c0bb9ba01a1c685d3bad0 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/carlisle/scalefnt.sty" 1522607821 1360 df2086bf924b14b72d6121fe9502fcdb ""
+  "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/comment/comment.sty" 1468691282 10197 204f75d5d8d88aa345a8c402e879e63b ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1623003186 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/eso-pic/eso-pic.sty" 1683737457 11876 6ef493863ae0d7a984706973240c2237 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.sty" 1601897756 46845 3b58f70c6e861a13d927bff09d35ecbc ""
@@ -161,13 +162,13 @@
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/wallpaper/wallpaper.sty" 1145608440 6919 f87ec89c767393dfb3b9adfd163539b0 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "Documentation_FR.png" 1729420728 126621 393f8ce5226d88c3c97aa1d0e02fc113 ""
-  "c:/Users/Lord/Desktop/CV - lettre/CV/CV (FR)/cv(FR).tex" 1729420728 11005 e37e4cda4279013ec0652745d6e31aa2 ""
-  "cv(FR).aux" 1729420728 376 ef78b92475718951b3f05f9c993c8edf "pdflatex"
-  "cv(FR).out" 1729420728 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "cv(FR).tex" 1729420728 11005 e37e4cda4279013ec0652745d6e31aa2 ""
-  "cvbg.png" 1729420728 6370 7cfd7c5ef55e77d3d7301ecec1f12a18 ""
-  "profile.jpg" 1729420729 2339995 1ca7baabfa0974d6610d19b54bff372f ""
+  "Documentation_FR.png" 1735919895 106066 5c8f2f99f11e47c7e90d4979bd039587 ""
+  "c:/Users/Lord/Desktop/CV - lettre/CV/CV (FR)/cv(FR).tex" 1737213189 11841 e132a1787e7204f95e3ec8468a2b85b5 ""
+  "cv(FR).aux" 1737213190 363 29c2ccb052e340883acac2bce606716e "pdflatex"
+  "cv(FR).out" 1737213190 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "cv(FR).tex" 1737213189 11841 e132a1787e7204f95e3ec8468a2b85b5 ""
+  "cvbg.png" 1734463588 6370 7cfd7c5ef55e77d3d7301ecec1f12a18 ""
+  "profile.jpg" 1734463588 2339995 1ca7baabfa0974d6610d19b54bff372f ""
   (generated)
   "cv(FR).aux"
   "cv(FR).log"
