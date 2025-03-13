@@ -11,6 +11,8 @@
 \usepackage{tikz}
 \usepackage{setspace}
 \usepackage{comment}
+\usepackage{eso-pic}
+
 
 \usetikzlibrary{calc}
 
@@ -27,7 +29,8 @@
   nomarginpar
 }
 
-\ThisCenterWallPaper{1.1}{cvbg.png}
+
+
 
 % Custom command for dividers
 \newcommand{\divider}{\rule{\linewidth}{0.9pt}}
@@ -38,9 +41,16 @@
 
 
 \begin{document}
+\AddToShipoutPictureBG*{
+  \AtPageLowerLeft{
+    % Adjust the horizontal shift with \hspace:
+    \hspace*{-5mm}% Move 1 cm to the left
+    \includegraphics[width=\paperwidth]{cvbg.png}%
+  }
+}
 
 %\small
-\begin{minipage}[t]{0.40\textwidth}
+\begin{minipage}[t]{0.30\textwidth}
 \setstretch{1.2} 
 \setlength{\baselineskip}{1\baselineskip}
 \color{white}
@@ -115,7 +125,9 @@
 
 {\large \textbf{Réseau}}
 
-\faNetworkWired \quad CCNP-ENCOR (en cours)
+\faNetworkWired \quad CCNP Security (en cours)
+
+\faNetworkWired \quad CCNP-ENCOR
 
 \faNetworkWired \quad CCNP-ENARSI
 
@@ -140,8 +152,8 @@
 
 
 \end{minipage}
-\hfill
-\begin{minipage}[t]{0.60\textwidth}
+\hspace{2mm}
+\begin{minipage}[t]{0.67\textwidth}
 
 
 
@@ -150,7 +162,7 @@
 % ======================= Right  Side ========================
 % ============================================================
 
-\setlength{\baselineskip}{1.5\baselineskip}
+\setlength{\baselineskip}{1.4\baselineskip}
 \vspace{0.7cm}
 
 {\huge Mehdi JAFARIZADEH}
@@ -185,7 +197,7 @@
     gestion des processus, administration Linux, analyse de complexité, structures de données.
 \end{itemize}
 
-\vspace{3mm}
+\vspace{2mm}
 
 
 {\textbf{Bachelor en Génie des Énergies (équivalent Licence)}}
@@ -202,7 +214,7 @@
     \item Compétences acquises : Modélisation énergétique, Optimisation de l'efficacité énergétique, Utilisation de logiciels spécialisés
 \end{itemize}
 
-\vspace{3mm}
+\vspace{2mm}
 
 {\textbf{Diplôme en Comptabilité (Bac+2)}}
 
@@ -249,7 +261,7 @@
 \begin{itemize}
     \footnotesize \item \textit{Cabinet de comptabilité Aria-Etemad}
    \newline
-    Effectué des calculs de comptabilité client à l’aide de Microsoft Office, notamment Excel. Développé des compétences avancées en Microsoft 365 et en calculs comptables au cours de cette expérience.
+    Effectué des calculs de comptabilité client à l’aide de Microsoft Office, notamment Excel. Développé des compétences avancées en Microsoft 365.
 \end{itemize}
 
 
@@ -260,9 +272,18 @@
 \begin{itemize}
     \footnotesize \item \textit{Industrie des câbles de Kerman et Kavian}
    \newline
-    Mené des recherches sur l’analyse thermique et la conductivité électrique des fils de cuivre sous la supervision du Dr Abdollahi. Utilisé des outils tels qu’ANSYS et SolidWorks pour modéliser et analyser des données techniques. Effectué des études approfondies sur des articles scientifiques pour appuyer les travaux de recherche.
+   Recherche sur l'analyse thermique et la conductivité électrique des fils de cuivre sous la supervision du Dr Abdollahi, avec utilisation d'ANSYS et SolidWorks pour la modélisation et l'analyse de données techniques, accompagnée d'une étude approfondie d'articles scientifiques.
 \end{itemize}
 
+\vspace{3mm}
+{\textbf{Assistant technique en sécurité réseau}}
+
+{\footnotesize Novembre 2023}
+\begin{itemize}
+   \footnotesize \item \textit{ GOHARYAN SASU, Strasbourg}
+   \newline
+   Assistance à l’équipe technique pour la mise en place et la configuration de canaux de communication sécurisés (VPN et IPSec) dans le cadre d’une collaboration internationale. Contribution essentielle à la protection des communications de recherche sensibles.
+\end{itemize}
 
 \vspace{3mm}
 {\textbf{Directeur de l'association d'ingénierie énergétique}}
@@ -349,11 +370,11 @@
 % ========================== Code QR ==========================
 
 \begin{tikzpicture}[remember picture,overlay]
-    \node[anchor=south east,inner sep=0pt] at ($(current page.south west)+(6.5cm,+2.5cm)$) {
+    \node[anchor=south east,inner sep=0pt] at ($(current page.south west)+(6.1cm,+2.5cm)$) {
         \includegraphics[width=2cm]{Documentation_FR.png}
     };
     
-    \node[anchor=south east,inner sep=0pt] at ($(current page.south west)+(4cm,+2.5cm)$) {
+    \node[anchor=south east,inner sep=0pt] at ($(current page.south west)+(3.8cm,+2.5cm)$) {
         \begin{minipage}[t]{3.05cm} 
             \color{white} \scriptsize \href{https://drive.google.com/file/d/1jKjZWYadaikaPetkEmjoupWWh_w1sMKA/view?usp=drive_link}{Veuillez cliquer ici ou scanner ce code QR pour accéder à un dossier détaillé de mes contributions académiques et professionnelles.}
         \end{minipage}
